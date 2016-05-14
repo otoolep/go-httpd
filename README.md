@@ -4,7 +4,7 @@ go-httpd [![Circle CI](https://circleci.com/gh/otoolep/go-httpd/tree/master.svg?
 go-httpd is a example Go project, showing you how to organise that most basic of systems -- a HTTP server that allows you to set and get key values in a store. It exhibits many other important principles of a good Go project.
 
 ## Project layout
-_main.go_, within the main package, is the entry point for the program, and this source file is at the top-level of the tree.
+`main.go`, within the _main_ package, is the entry point for the program, and this source file is at the top-level of the tree.
 
 There are other possible paths for this main package, depending on your requirements. One other suggested place is in `cmd/go-httpd/`. This can be convenient if your project builds more than one binary -- a CLI for example. Then the CLI can be located in `cmd/go-http-cli`. For an example of a project using this structure, check out [rqlite](http://github.com/rqlite/rqlite).
 
@@ -33,7 +33,7 @@ curl -XPOST localhost:8080/key -d '{"user1": "batman"}'
 curl -XGET localhost:8080/key/user1
 ```
 
-### Building and re-building
+### Building and rebuilding
 Once you've downloaded the code from GitHub, you'll want to change the code and rebuild it. The easiest way to this is to execute the following commands:
 ```
 cd $GOPATH/src/github.com/otoolep/go-httpd
@@ -41,6 +41,9 @@ go build
 ./go-httpd
 ```
 To build __and__ install the binary in `$GOPATH/bin`, instead execute `go install`.
+
+### Development environments
+vim has good support for Go, via XXX GO_VIM XXX. Go support for Sublime 3 is also available via [GoSublime](XXXX)
 
 ## Use the standard library
 Go comes with a high-quality standard library, with support for much important functionality such as networking, compression, JSON serialization, encryption, IO, concurrency, and synchronization. It is better to use the the standard library even if it means having to write a little bit of extra code, than to import a third-party library. You can learn more about this philosophy [here](XXXXX).
@@ -80,3 +83,4 @@ Be sure to check out the following references:
 * Effective Go. You should read this when you first start programming in Go, and then read it again 3 months later. And then read it again 6 months later.
 * How to write Go.
 * The Go Programming Language.
+* The Go Playground -- a useful place to share snippets of Go code.
