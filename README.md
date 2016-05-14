@@ -80,7 +80,7 @@ To install the hook execute `make install` from within the `hooks directory`.
 ## Go Programming References
 Be sure to check out the following references:
 * The standard docs. You really don't need much else.
-* Effective Go. You should read this when you first start programming in Go, and then read it again 3 months later. And then read it again 6 months later.
+* Effective Go. You should read this when you first start programming in Go, and then read it again 3 months later. And then read it again 6 months after that.
 * How to write Go.
 * The Go Programming Language.
 * The Go Playground -- a useful place to share snippets of Go code.
