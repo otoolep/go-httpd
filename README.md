@@ -43,7 +43,7 @@ go build
 To build __and__ install the binary in `$GOPATH/bin`, instead execute `go install`.
 
 ### Development environments
-vim has good support for Go, via a [plugin](https://github.com/fatih/vim-go). Go support for Sublime 3 is also available via [GoSublime](https://github.com/DisposaBoy/GoSublime)
+vim has good support for Go, via a [plugin](https://github.com/fatih/vim-go). Go support for Sublime 3 is also available via [GoSublime](https://github.com/DisposaBoy/GoSublime).
 
 ## Use the standard library
 Go comes with a high-quality standard library, with support for much important functionality such as networking, compression, JSON serialization, encryption, IO, concurrency, and synchronization. It is better to use the standard library even if it means having to write a little bit of extra code, than to import a third-party library. You can learn more about this philosophy [here](https://blog.gopheracademy.com/advent-2014/case-against-3pl/).
