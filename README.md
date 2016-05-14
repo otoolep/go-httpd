@@ -79,10 +79,10 @@ To install the hook execute `make install` from within the `hooks directory`.
 
 ## Go Programming References
 Be sure to check out the following references:
-* The standard docs. You really don't need much else.
-* Effective Go. You should read this when you first start programming in Go, and then read it again 3 months later. And then read it again 6 months after that.
-* How to write Go.
-* The Go Programming Language.
-* The Go Playground -- a useful place to share snippets of Go code.
+* The [standard docs](https://golang.org/pkg/). You really don't need much else.
+* [Effective Go](https://golang.org/doc/effective_go.html). You should read this when you first start programming in Go, and then read it again 3 months later. And then read it again 6 months after that.
+* [How to Write Go](https://golang.org/doc/code.html).
+* [The Go Programming Language](http://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440).
+* The [Go Playground](https://play.golang.org/) -- a useful place to share snippets of Go code.
 * [rqlite](http://github.com/rqlite/rqlite) -- a distributed database, with SQLite as its storage engine. rqlite is a much more sophisticated example of production-quality Go code, which strives to follow all the principles outlined above.
-* 400 Days of Go -- a blog post I wrote on why I like Go.
+* [400 Days of Go](http://www.philipotoole.com/400-days-of-go/) -- a blog post I wrote on why I like Go.
