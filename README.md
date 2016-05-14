@@ -84,3 +84,5 @@ Be sure to check out the following references:
 * How to write Go.
 * The Go Programming Language.
 * The Go Playground -- a useful place to share snippets of Go code.
+* [rqlite](http://github.com/rqlite/rqlite) -- a distributed database, with SQLite as its storage engine. rqlite is a much more sophisticated example of production-quality Go code, which strives to follow all the principles outlined above.
+* 400 Days of Go -- a blog post I wrote on why I like Go.
