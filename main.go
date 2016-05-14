@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/otoolep/go-httpd/http"
+	"github.com/otoolep/go-httpd/httpd"
 	"github.com/otoolep/go-httpd/store"
 )
 
