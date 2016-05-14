@@ -8,6 +8,8 @@ _main.go_, within the main package, is the entry point for the program, and this
 
 There are other possible paths for this main package, depending on your requirements. One other suggested place is in `cmd/go-httpd/`. This can be convenient if your project builds more than one binary -- a CLI for example. Then the CLI can be located in `cmd/go-http-cli`. For an example of a project using this structure, check out [rqlite](http://github.com/rqlite/rqlite).
 
+Other wise the remainder of the project is contained in two sub-projects -- _http_ and _store_.
+
 ## Running go-httpd
 Starting and running go-httpd is easy. Download and build it like so:
 
@@ -54,3 +56,8 @@ Within the `hooks` directory is a git _pre commit hook_. Installing this hook me
 
 ## CircleCI integration
 [CircleCI](http://www.circleci.com) supports Go testing without any extra work on your part. The example `yml` file included in this repository shows how to instruct CircleCI to check for for formatting and linting issues, as well as run your code through Go's race detection system.
+
+## Go Programming References
+Be sure to check out the following references:
+* The standard docs. You really don't need much else.
+* Effective Go. You should read this when you first start programming in Go, and then read it again 3 months later. And then read it again 6 months later.
