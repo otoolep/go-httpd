@@ -11,6 +11,7 @@ import (
 	"testing"
 )
 
+// Test_NewServer performs basic testing of the HTTP service.
 func Test_NewServer(t *testing.T) {
 	store := newTestStore()
 	s := &testServer{New(":0", store)}
@@ -48,40 +49,44 @@ func Test_NewServer(t *testing.T) {
 
 }
 
+// testServer represents a service under test.
 type testServer struct {
 	*Service
 }
 
+// URL returns the URL of the service.
 func (t *testServer) URL() string {
 	port := strings.TrimLeft(t.Addr().String(), "[::]:")
 	return fmt.Sprintf("http://127.0.0.1:%s", port)
 }
 
+// testStore represents a mock store, demonstrating the use of interfaces
+// to mock out a real store.
 type testStore struct {
 	m map[string]string
 }
 
+// newTestStore returns an initialized mock store.
 func newTestStore() *testStore {
 	return &testStore{
 		m: make(map[string]string),
 	}
 }
 
+// Get gets the requested key.
 func (t *testStore) Get(key string) (string, error) {
 	return t.m[key], nil
 }
 
+// Set sets the given key to given value.
 func (t *testStore) Set(key, value string) error {
 	t.m[key] = value
 	return nil
 }
 
+// Delete delets the given key.
 func (t *testStore) Delete(key string) error {
 	delete(t.m, key)
-	return nil
-}
-
-func (t *testStore) Join(addr string) error {
 	return nil
 }
 

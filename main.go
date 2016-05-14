@@ -17,6 +17,7 @@ const DefaultHTTPAddr = ":8080"
 // Parameters
 var httpAddr string
 
+// init initializes this package.
 func init() {
 	flag.StringVar(&httpAddr, "addr", DefaultHTTPAddr, "Set the HTTP bind address")
 	flag.Usage = func() {
@@ -25,6 +26,7 @@ func init() {
 	}
 }
 
+// main is the entry point for the service.
 func main() {
 	flag.Parse()
 
@@ -47,6 +49,9 @@ func main() {
 	select {
 	case <-signalCh:
 		log.Println("signal received, shutting down...")
+		if err := s.Close(); err != nil {
+			log.Println("failed to close store: %s", err.Error())
+		}
 		if err := h.Close(); err != nil {
 			log.Println("failed to close HTTP service:", err.Error())
 		}

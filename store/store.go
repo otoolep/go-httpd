@@ -29,6 +29,11 @@ func (s *Store) Open() error {
 	return nil
 }
 
+// Close closes the store.
+func (s *Store) Close() error {
+	return nil
+}
+
 // Get returns the value for the given key.
 func (s *Store) Get(key string) (string, error) {
 	s.mu.RLock()

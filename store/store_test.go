@@ -4,10 +4,14 @@ import (
 	"testing"
 )
 
+// Test_StoreOpen tests that the store can be opened and closed.
 func Test_StoreOpen(t *testing.T) {
 	s := New()
 	if err := s.Open(); err != nil {
 		t.Fatalf("failed to open store: %s", err)
+	}
+	if err := s.Close(); err != nil {
+		t.Fatalf("failed to close store: %s", err)
 	}
 }
 
