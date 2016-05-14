@@ -1,4 +1,4 @@
-go-httpd [![Circle CI](https://circleci.com/gh/otoolep/go-httpd/tree/master.svg?style=svg)](https://circleci.com/gh/otoolep/go-httpd/tree/master) [![GoDoc](https://godoc.org/github.com/otoolep/go-httpd?status.png)](https://godoc.org/github.com/otoolep/go-httpd)
+go-httpd [![Circle CI](https://circleci.com/gh/otoolep/go-httpd/tree/master.svg?style=svg)](https://circleci.com/gh/otoolep/go-httpd/tree/master) [![GoDoc](https://godoc.org/github.com/otoolep/go-httpd?status.png)](https://godoc.org/github.com/otoolep/go-httpd) [![Go Report Card](https://goreportcard.com/badge/github.com/otoolep/go-httpd)](https://goreportcard.com/report/github.com/otoolep/go-httpd)
 ======
 
 go-httpd is a example Go project, showing you how to organise that most basic of systems -- a HTTP server that allows you to set and get key values in a store. It exhibits many other important principles of a good Go project.
