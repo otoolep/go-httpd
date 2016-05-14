@@ -12,6 +12,7 @@ import (
 	"github.com/otoolep/go-httpd/store"
 )
 
+// DefaultHTTPAddr is the default HTTP bind address.
 const DefaultHTTPAddr = ":8080"
 
 // Parameters
@@ -50,7 +51,7 @@ func main() {
 	case <-signalCh:
 		log.Println("signal received, shutting down...")
 		if err := s.Close(); err != nil {
-			log.Println("failed to close store: %s", err.Error())
+			log.Println("failed to close store:", err.Error())
 		}
 		if err := h.Close(); err != nil {
 			log.Println("failed to close HTTP service:", err.Error())
