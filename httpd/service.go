@@ -38,7 +38,7 @@ func New(addr string, store Store) *Service {
 	return &Service{
 		addr:   addr,
 		store:  store,
-		logger: log.New(os.Stderr, "[store] ", log.LstdFlags),
+		logger: log.New(os.Stderr, "[http] ", log.LstdFlags),
 	}
 }
 
