@@ -19,6 +19,7 @@ cd go-httpd/
 export GOPATH=$PWD
 go get github.com/otoolep/go-httpd
 ```
+Some people consider using a distinct `GOPATH` environment variable for each project _doing it wrong_. In practise I, and many other Go programmers, find this actually most convenient.
 
 Run it like so:
 
