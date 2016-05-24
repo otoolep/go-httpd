@@ -1,7 +1,7 @@
 go-httpd [![Circle CI](https://circleci.com/gh/otoolep/go-httpd/tree/master.svg?style=svg)](https://circleci.com/gh/otoolep/go-httpd/tree/master) [![GoDoc](https://godoc.org/github.com/otoolep/go-httpd?status.png)](https://godoc.org/github.com/otoolep/go-httpd) [![Go Report Card](https://goreportcard.com/badge/github.com/otoolep/go-httpd)](https://goreportcard.com/report/github.com/otoolep/go-httpd)
 ======
 
-go-httpd is a example Go project, showing you how to organise that most basic of systems -- a HTTP server that allows you to set and get values in a key-value store. It exhibits many other important principles of a good Go project.
+go-httpd is an example Go project, showing you how to organise that most basic of systems -- a HTTP server that allows you to set and get values in a key-value store. It exhibits many other important principles of a good Go project.
 
 ## Project layout
 `main.go`, within the _main_ package, is the entry point for the program, and this source file is at the top-level of the tree.
@@ -35,7 +35,7 @@ curl -XGET localhost:8080/key/user1
 ```
 
 ### Building and rebuilding
-Once you've downloaded the code from GitHub, you'll want to change the code and rebuild it. The easiest way to this is to execute the following commands:
+Once you've downloaded the code from GitHub, you'll probably want to change the code and rebuild it. The easiest way to do this is to execute the following commands:
 ```
 cd $GOPATH/src/github.com/otoolep/go-httpd
 go build
@@ -63,7 +63,7 @@ go test -v ./...
 ### Interfaces
 Interfaces are a key concept within Go, and allow components to interact in a very natural way. The [_io.Reader_](https://golang.org/pkg/io/#Reader) and [_io.Writer_](https://golang.org/pkg/io/#Writer) interfaces are the most important examples in the standard library.
 
-Interfaces are also very useful for testing. The HTTP service within go-httpd does not import the Store directly, but instead specifies the interface a Store must support. This makes it very easy to pass a mock store to the HTTP service, as part of this testing.
+Interfaces are also very useful for testing. The HTTP service within go-httpd does not import the Store directly, but instead specifies the interface any Store must support. This makes it very easy to pass a mock store to the HTTP service, as part of this testing.
 
 ## Documentation
 The _GoDoc_ standard is very easy to follow and results in nice, easy to read, documentation.
