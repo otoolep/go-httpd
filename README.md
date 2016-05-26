@@ -54,6 +54,9 @@ Go comes with a high-quality standard library, with support for much important f
 
 You can see this principle at work in go-httpd. It uses the standard _logging_ package, _testing_ package, and does its own HTTP routing, even though there are literally hundreds of non-standard packages that claim to do a better job in each area. In my experience just stick with the standard library if at all possible.
 
+## Logging
+Each package prefixes its log output with an identifiable string, and sends the output to `stderr`. Many operators find this most convenient, as **they** can then decide where to send the log output of your program.
+
 ## Testing
 Each package is tested via the framework that comes with the standard library, using simple test cases. A full test suite would involve many more tests.
 
