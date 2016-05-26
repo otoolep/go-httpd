@@ -10,6 +10,9 @@ There are other possible paths for this main package, depending on your requirem
 
 Otherwise the remainder of the project is contained in two sub-packages -- _http_ and _store_.
 
+### Project name
+It's not best to call your project `go-<something>`. Just call it `<something>`. I called this project `go-httpd` project for clarity.
+
 ## Running go-httpd
 Starting and running go-httpd is easy. Download and build it like so:
 
