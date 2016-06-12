@@ -4,7 +4,7 @@ go-httpd [![Circle CI](https://circleci.com/gh/otoolep/go-httpd/tree/master.svg?
 go-httpd is an example Go project, showing you how to organise that most basic of systems -- a HTTP server that allows you to set and get values in a key-value store. Trivial _Hello, World_ programs don't demonstrate how to organise a real program, but go-httpd does. It also exhibits many other important principles of a good Go project.
 
 ## Project layout
-`main.go`, within the _main_ package, is the entry point for the program, and this source file is at the top-level of the tree.
+`main.go`, within the _main_ package, is the entry point for the program, and this source file is at the top level of the tree.
 
 There are other possible paths for this main package, depending on your requirements. One other suggested place is in `cmd/go-httpd/`. This can be convenient if your project builds more than one binary -- a CLI for example. Then the CLI can be located in `cmd/go-http-cli`. Two examples of projects using this structure are [rqlite](http://github.com/rqlite/rqlite) and [InfluxDB](https://github.com/influxdata/influxdb).
 
@@ -30,7 +30,7 @@ Run it like so:
 $GOPATH/bin/go-httpd
 ```
 
-You can now set a key and read its value back:
+You can now set a key and read its value back as follows:
 
 ```
 curl -XPOST localhost:8080/key -d '{"user1": "batman"}'
