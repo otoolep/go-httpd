@@ -14,6 +14,8 @@ Otherwise the remainder of the project is contained in two sub-packages -- _http
 It's best not to call your project `go-<something>`. Just call it `<something>`. I called this project `go-httpd` for clarity.
 
 ## Running go-httpd
+*Building go-httpd requires Go 1.5 or later. [gvm](https://github.com/moovweb/gvm) is a great tool for installing and managing your versions of Go.*
+
 Starting and running go-httpd is easy. Download and build it like so:
 ```
 mkdir go-httpd # Or any directory of your choice
