@@ -15,6 +15,7 @@ func Test_StoreOpen(t *testing.T) {
 	}
 }
 
+// Test_StoreOpenSingleNode tests reading and writing keys.
 func Test_StoreOpenSingleNode(t *testing.T) {
 	s := New()
 	if err := s.Open(); err != nil {
