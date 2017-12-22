@@ -81,7 +81,7 @@ Within the `hooks` directory is a git _pre-commit hook_. Installing this hook me
 To install the hook execute `make install` from within the `hooks directory`.
 
 ## CircleCI integration
-[CircleCI](http://www.circleci.com) supports basic Go testing without any extra work on your part, but that testing can be more sophisticated. The example `yml` file included in this repository shows how to instruct CircleCI to perform extra testing such as checking for formatting and linting issues. It also instructs CircleCI to run your code through Go's [race detection](https://blog.golang.org/race-detector) system.
+[CircleCI](http://www.circleci.com) supports basic Go testing without any extra work on your part, but that testing can be more sophisticated. The example `yml` file included in this repository shows how to instruct CircleCI (version 1.0) to perform extra testing such as checking for formatting and linting issues. It also instructs CircleCI to run your code through Go's [race detection](https://blog.golang.org/race-detector) system.
 
 ## Go Programming References
 Be sure to check out the following references:
