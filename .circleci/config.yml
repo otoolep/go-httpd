@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/go-httpd/src/github.com/otoolep/go-httpd
+    docker:
+      - image: circleci/golang:1.10
+
+    steps:
+        - checkout
+        - run: go tool vet .
+        - run: go get -t -d -v ./...
+        - run: go test -timeout 60s -v ./...
+        - run:
+            command: go test -race -timeout 120s -v ./...
+            environment:
+                GORACE: "halt_on_error=1"
