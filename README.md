@@ -11,7 +11,7 @@ There are other possible paths for this main package, depending on your requirem
 Otherwise the remainder of the project is contained in two sub-packages -- _http_ and _store_.
 
 ### Project name
-It's best not to call your project `go-<something>`. Just call it `<something>`. I called this project `go-httpd` for clarity.
+It's best not to call your project `go-<something>`. Just call it `<something>`. I called this project `go-httpd` to make the connection with Go clear.
 
 ## Running go-httpd
 *Building go-httpd requires Go 1.5 or later. [gvm](https://github.com/moovweb/gvm) is a great tool for installing and managing your versions of Go.*
